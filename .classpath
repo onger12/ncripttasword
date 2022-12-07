@@ -6,5 +6,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="libreria/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="libreria/commons-codec-1.15-javadoc.jar"/>
+	<classpathentry kind="lib" path="libreria/commons-codec-1.15-sources.jar"/>
+	<classpathentry kind="lib" path="libreria/commons-codec-1.15-tests.jar"/>
+	<classpathentry kind="lib" path="libreria/commons-codec-1.15-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
