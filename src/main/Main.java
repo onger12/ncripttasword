@@ -20,9 +20,8 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-		String badPass = "123aaaaaaaaaaaaaaaa";
-		boolean passValue = validarPass(badPass);
-		System.out.print(passValue);
+		String badPass = "123123123123As";
+		boolean passValue = enc.validarPass(badPass);
 		
 		
 		String res = menu.menu();
@@ -37,19 +36,5 @@ public class Main {
 			default:
 				menu.output("default");
 		}
-	}
-	
-	private boolean validarPass(String pass) {
-		boolean response = false;
-		
-		if(pass.length() < 8) return false;
-		
-		for (int i = 0; i < pass.length(); i++)
-		{
-		   if (Character.isUpperCase( pass.charAt( i ))) return false;
-		}
-		
-		System.out.println("pasó");
-		return response;
 	}
 }
