@@ -10,7 +10,7 @@ public class Menu {
 	public Menu () {
 		sc = new Scanner(System.in);
 		menu_msg = "*** MENU PRINCIPAL ***\n"
-				 + "1.Asignacion de contraseña\n"
+				 + "1. Asignacion de contraseña\n"
 				 + "2. Cambio de contraseña\n"
 				 + "-> ";
 	}

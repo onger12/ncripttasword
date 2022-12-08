@@ -11,18 +11,23 @@ public class Main {
 		menu = new Menu();
 		Encriptador enc = new Encriptador();
 		Usuario user = new Usuario();
-		String pass = enc.generateRandomPass(12);
+		String ramdonPass = enc.generateRandomPass(12);
 
 		try {
-			user.addPassword( enc.encrypt( pass ));
+			//Add encripted random password to user
+			user.addPassword( enc.encrypt( ramdonPass ));
 		} catch ( Exception e ) {
-			
 			e.printStackTrace();
 		}
 		
-		String badPass = "123aaaaaaaaaaaaaaaa";
-		boolean passValue = validarPass(badPass);
-		System.out.print(passValue);
+		System.out.println("El sistema le asignó la contraseña: " + ramdonPass);
+
+		menu.output("Esta contraseña es temporal, por favor a contuniación le pediremos que la cambie.");
+		String newPass = menu.input("Ingrese la contraseña actual: ");
+
+		if("hola" != "") {
+
+		}
 		
 		
 		String res = menu.menu();
